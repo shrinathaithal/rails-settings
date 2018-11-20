@@ -13,7 +13,7 @@ module RailsSettings
       end
     end
 
-    serialize :value, Hash
+    serialize :value, JSON
 
     if RailsSettings.can_protect_attributes?
       # attr_protected can not be used here because it touches the database which is not connected yet.
